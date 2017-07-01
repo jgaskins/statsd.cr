@@ -1,3 +1,6 @@
 sudo: required
 dist: trusty
 language: crystal
+
+# Build failing
+group: deprecated-2017Q2
