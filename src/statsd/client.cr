@@ -34,10 +34,6 @@ module Statsd
 
       begin
         @client.send(message, @destination)
-      rescue ex : Errno
-        if ex.errno == Errno::ECONNREFUSED
-          # TODO: add a debug log event here if this occurs
-        end
       end
     end
   end
